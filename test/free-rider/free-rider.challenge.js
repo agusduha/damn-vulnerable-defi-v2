@@ -117,7 +117,7 @@ describe("[Challenge] Free Rider", function () {
     );
 
     // Execute the attack with the corresponding NFT price
-    await attackerContract.attack(NFT_PRICE);
+    await attackerContract.connect(attacker).attack(NFT_PRICE);
   });
 
   after(async function () {
